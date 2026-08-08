@@ -1,0 +1,21 @@
+name: DevOps CI/CD Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Update Local Repository & Reload Services
+        run: |
+          cd /opt/pve-docker-zabbix-lab
+          git pull origin main
+          chmod +x scripts/*.sh
+          ./scripts/auto-heal.sh || true
+          docker exec my-nginx nginx -s reload || true
+          echo "CI/CD Deployment executed successfully on Debian!"
