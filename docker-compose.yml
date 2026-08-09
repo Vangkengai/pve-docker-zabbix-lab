@@ -12,7 +12,7 @@ services:
       - ./nginx/conf.d:/etc/nginx/conf.d:ro
       - ./nginx/html:/usr/share/nginx/html:ro
 
-  zabbix-agent:
+zabbix-agent:
     image: zabbix/zabbix-agent2:latest
     container_name: zabbix-agent2
     restart: always
@@ -22,6 +22,6 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
     environment:
-      - ZBX_SERVER_HOST=192.168.31.81:10051
+      - ZBX_SERVER_HOST=192.168.31.81,172.30.0.1,172.28.0.1,172.17.0.1
+      - ZBX_ACTIVESERVERS=192.168.31.81
       - ZBX_HOSTNAME=Zabbix server
-      
