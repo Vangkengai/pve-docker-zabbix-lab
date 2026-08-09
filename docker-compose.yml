@@ -5,6 +5,7 @@ services:
     image: nginx:alpine
     container_name: nginx-proxy
     restart: always
+    user: root
     ports:
       - "8081:80"
       - "8082:8080"
