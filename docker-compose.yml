@@ -12,7 +12,7 @@ services:
       - ./nginx/conf.d:/etc/nginx/conf.d:ro
       - ./nginx/html:/usr/share/nginx/html:ro
 
-zabbix-agent:
+  zabbix-agent:
     image: zabbix/zabbix-agent2:latest
     container_name: zabbix-agent2
     restart: always
