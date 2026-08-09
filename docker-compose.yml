@@ -22,4 +22,4 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock:ro
     environment:
       - ZBX_SERVER_HOST=192.168.31.81,172.16.0.0/12,127.0.0.1
-      - ZBX_SERVER_ACTIVE_HOST=192.168.31.81
+      - ZBX_ACTIVESERVER=192.168.31.81
