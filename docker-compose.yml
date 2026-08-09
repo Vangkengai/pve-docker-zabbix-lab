@@ -17,7 +17,7 @@ services:
     container_name: zabbix-agent2
     restart: always
     ports:
-      - "10052:10050"
+      - "10050:10050"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
     environment:
