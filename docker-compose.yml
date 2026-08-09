@@ -16,7 +16,7 @@ services:
     image: zabbix/zabbix-agent2:latest
     container_name: zabbix-agent2
     restart: always
-        user: root
+    user: root
     ports:
       - "10050:10050"
     volumes:
