@@ -31,6 +31,3 @@ Proxmox VE 嵌套虚拟化、Docker 容器运维、网络治理与 Zabbix 告警
 <img width="1818" height="880" alt="image" src="https://github.com/user-attachments/assets/f305439c-3fc1-428e-a395-8773d0963ace" />
 <img width="1812" height="1133" alt="image" src="https://github.com/user-attachments/assets/06b2d176-428b-426b-9245-0a5dc4635159" />
 <img width="530" height="460" alt="b07e64a6-5506-48d8-9eea-2a01ca8efa14" src="https://github.com/user-attachments/assets/8a2b43d4-c0b3-465f-82e0-65d319e662b0" />
-
-
-## CI/CD Status: Active
