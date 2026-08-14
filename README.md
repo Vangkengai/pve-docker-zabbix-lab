@@ -2,7 +2,7 @@
 
 Proxmox VE 嵌套虚拟化、Docker 容器运维、网络治理与 Zabbix 告警闭环
 
-# PVE & Docker Infrastructure with Zabbix Monitoring Lab
+# PVE & Docker Infrastructure with Zabbix Monitoring
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Environment](https://img.shields.io/badge/PVE-Nested-orange.svg)
